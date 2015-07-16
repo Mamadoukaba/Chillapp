@@ -31,6 +31,7 @@
                                 </state>
                                 <connections>
                                     <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reR-CK-bYN"/>
+                                    <segue destination="hmg-Zc-4Bo" kind="show" id="EWg-Xd-dVg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qY1-ND-8rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132.5" y="489.08450704225351"/>
+            <point key="canvasLocation" x="1152" y="489"/>
         </scene>
     </scenes>
     <resources>
@@ -79,4 +80,7 @@
         <image name="Facebook-50" width="50" height="50"/>
         <image name="Logo" width="355" height="79"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rxe-nA-a6g"/>
+    </inferredMetricsTieBreakers>
 </document>
