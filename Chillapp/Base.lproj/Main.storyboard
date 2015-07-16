@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="13d-vI-0M6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="WJh-8P-69A">
+                                <rect key="frame" x="123" y="49" width="355" height="79"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-7u-bdh">
+                                <rect key="frame" x="275" y="511" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Facebook-50">
+                                    <color key="titleShadowColor" red="0.51824889520202022" green="0.51824889520202022" blue="0.51824889520202022" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reR-CK-bYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerYWithinMargins" secondItem="13d-vI-0M6" secondAttribute="centerYWithinMargins" id="1LY-o3-Rpn"/>
+                            <constraint firstItem="13d-vI-0M6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="A1w-Bn-kVc"/>
+                            <constraint firstItem="PgD-7u-bdh" firstAttribute="centerX" secondItem="WJh-8P-69A" secondAttribute="centerX" id="LPj-ac-HHj"/>
+                            <constraint firstItem="PgD-7u-bdh" firstAttribute="centerX" secondItem="13d-vI-0M6" secondAttribute="centerX" id="Txf-Cf-qCz"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="13d-vI-0M6" secondAttribute="centerXWithinMargins" id="a06-QN-9cn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PgD-7u-bdh" secondAttribute="bottom" constant="39" id="jS9-Gg-yZx"/>
+                            <constraint firstItem="13d-vI-0M6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="uGw-he-F0m"/>
+                            <constraint firstItem="WJh-8P-69A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="wiR-IJ-3eH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="linkFacenookButton" destination="PgD-7u-bdh" id="Bfq-ZT-Pju"/>
+                        <segue destination="hmg-Zc-4Bo" kind="presentation" identifier="Login" id="rxe-nA-a6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="489"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FNI-ro-vDE">
+            <objects>
+                <viewController id="hmg-Zc-4Bo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OcY-xd-De4"/>
+                        <viewControllerLayoutGuide type="bottom" id="iis-1i-0Tv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ejz-E3-KGy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qY1-ND-8rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132.5" y="489.08450704225351"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Facebook-50" width="50" height="50"/>
+        <image name="Logo" width="355" height="79"/>
+    </resources>
+</document>
