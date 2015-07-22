@@ -10,6 +10,7 @@
 		656471861B5D43590094C8AA /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656471851B5D43590094C8AA /* PreferenceViewController.swift */; };
 		656471E21B5D83B70094C8AA /* QuadratTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656471CB1B5D82000094C8AA /* QuadratTouch.framework */; };
 		656471E31B5D83B70094C8AA /* QuadratTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 656471CB1B5D82000094C8AA /* QuadratTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656471EB1B5FDE9B0094C8AA /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656471EA1B5FDE9B0094C8AA /* Places.swift */; };
 		6566063A1B56DEFC00C2A8D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656606391B56DEFC00C2A8D3 /* Images.xcassets */; };
 		65D3862B1B559D5800EFEE5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3862A1B559D5800EFEE5B /* AppDelegate.swift */; };
 		65D3862D1B559D5800EFEE5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3862C1B559D5800EFEE5B /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		656471851B5D43590094C8AA /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		656471C31B5D82000094C8AA /* Quadrat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quadrat.xcodeproj; path = "das-quadrat/Source/Quadrat.xcodeproj"; sourceTree = "<group>"; };
+		656471EA1B5FDE9B0094C8AA /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		656606381B569AF600C2A8D3 /* Chillapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chillapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		656606391B56DEFC00C2A8D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65D386251B559D5800EFEE5B /* Chillapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 				65D386331B559D5800EFEE5B /* LaunchScreen.xib */,
 				65D386281B559D5800EFEE5B /* Supporting Files */,
 				656471851B5D43590094C8AA /* PreferenceViewController.swift */,
+				656471EA1B5FDE9B0094C8AA /* Places.swift */,
 			);
 			path = Chillapp;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656471861B5D43590094C8AA /* PreferenceViewController.swift in Sources */,
+				656471EB1B5FDE9B0094C8AA /* Places.swift in Sources */,
 				65D3862D1B559D5800EFEE5B /* ViewController.swift in Sources */,
 				65D3862B1B559D5800EFEE5B /* AppDelegate.swift in Sources */,
 			);
