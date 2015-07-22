@@ -24,19 +24,19 @@ class PreferenceViewController: UIViewController {
     var searchbar = 0
     
     
+    
+    
     @IBAction func searchButton(sender: UIButton) {
-        let client = Client(clientID:       "QOYLSJXAXYV5GEHMZAUSFUGGQX0QBWFSLRPN25PHGKBDT0LJ",
-            clientSecret:   "TTCDU05B0DKBGTXI1AZSGHWQDGDLMTYFNHTHH32AHLDIHPGE",
-            redirectURL:    "testapp123://foursquare")
-        var configuration = Configuration(client:client)
-        Session.setupSharedSessionWithConfiguration(configuration)
-        
         let session = Session.sharedSession()
-        var parameters = [Parameter.query:"Burgers"]
+        var parameters = [Parameter.query:searchBar.text!]
+        var location = [Parameter.ll]
+        var radius = [Parameter.radius]
+        
         //parameters += self.location.parameters()
         let searchTask = session.venues.search(parameters) {
             (result) -> Void in
             if let response = result.response {
+                println(response)
                 //self.venues = response["venues"] as [JSONParameters]?
                 //self.tableView.reloadData()
             }
