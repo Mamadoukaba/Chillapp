@@ -23,10 +23,14 @@ class PreferenceViewController: UIViewController {
     var sliderValue = 0
     var searchbar = 0
     
+    
+    
     @IBAction func searchButton(sender: UIButton) {
         let session = Session.sharedSession()
         var parameters = [Parameter.query:searchBar.text!]
         //var location = [Parameter.radius]
+        parameters += [Parameter.near:"New York, NY"]
+        
         
         //parameters += self.location.parameters()
         let searchTask = session.venues.search(parameters) {
@@ -36,6 +40,7 @@ class PreferenceViewController: UIViewController {
                 self.performSegueWithIdentifier("ShowPlaces", sender: self)
                 //self.venues = response["venues"] as [JSONParameters]?
                 //self.tableView.reloadData()
+                
             }
         }
         searchTask.start()

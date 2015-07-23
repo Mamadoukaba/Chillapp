@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FBSDKCoreKit
 import QuadratTouch
 
 @UIApplicationMain
@@ -22,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             redirectURL:    "testapp123://foursquare")
         var configuration = Configuration(client:client)
         Session.setupSharedSessionWithConfiguration(configuration)
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        return true
         
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -46,7 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
