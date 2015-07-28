@@ -32,7 +32,7 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-        cell.textLabel!.text = myJSON["venues"][indexPath.row]["categories"][0]["name"].string
+        cell.textLabel!.text = myJSON["venues"][indexPath.row]["name"].string
         return cell
         
         
@@ -45,17 +45,5 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //var name = results["name"] as! [[String: AnyObject]]
     }
-    
-//    private func handleResponse(data: NSData) {
-//        let json = JSON(data: data)
-//        if let place = json["venues"][0]["place"] {
-//           let description = json["categories"]["description"]
-//            let details = json["icon"]["details"]
-//            let placename = json["name"]["placename"]
-//            cell.textlabel.text = placename
-//        }
-//    }
 }

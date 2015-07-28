@@ -34,7 +34,7 @@ class PreferenceViewController: UIViewController {
         let searchTask = session.venues.search(parameters) {
             (result) -> Void in
         if let response = result.response {
-//                println(response.venues.categories.icon.name)
+              println(response)
             myJSON = JSON(response)
             self.savedResponse = response
             self.performSegueWithIdentifier("ShowPlaces", sender: self)
