@@ -10,10 +10,10 @@ import UIKit
 import QuadratTouch
 import SwiftyJSON
 
+
 class PlacesResultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var Label: UILabel!
-  
+    
  
     var repositories = [Repository]()
     var results = [String: AnyObject]() {
@@ -21,7 +21,6 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
             json = JSON(results)
         }
     }
-//    let venues = results["venues"] as! [[String: AnyObject]]
     var json: JSON?
     
     
@@ -37,13 +36,10 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
         
         
         
+        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }

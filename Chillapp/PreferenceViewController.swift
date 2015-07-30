@@ -9,9 +9,69 @@
 import UIKit
 import QuadratTouch
 import SwiftyJSON
+import CoreLocation
 
 
-class PreferenceViewController: UIViewController {
+class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
+    
+    //LOCATION CODE
+    
+    let locationManager = CLLocationManager()
+    var location: String?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        self.searchBar.resignFirstResponder()
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+            
+            if error != nil {
+                println("error: " + error.localizedDescription)
+                return
+            }
+            
+            if placemarks.count > 0
+            {
+                let pm = placemarks[0] as! CLPlacemark
+                self.displayLocationinfo(pm)
+                
+            }
+        })
+    }
+    
+    
+    
+    func displayLocationinfo(placemark: CLPlacemark) {
+    
+        self.locationManager.stopUpdatingLocation()
+            println(placemark.locality)
+            //println(placemark.postalCode)
+            println(placemark.administrativeArea)
+            println(placemark.country)
+            location = "\(placemark.locality) + \(placemark.postalCode) + \(placemark.administrativeArea) + \(placemark.country)"
+        }
+    
+    
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println("Error: " + error.localizedDescription)
+    }
+    
+    // VIEW CONTROLLER CODE
+    
     @IBOutlet weak var distanceLabel: UILabel!
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -30,11 +90,11 @@ class PreferenceViewController: UIViewController {
     @IBAction func searchButton(sender: UIButton) {
         let session = Session.sharedSession()
         var parameters = [Parameter.query:searchBar.text!]
-        parameters += [Parameter.near:"New York, NY"]
+        parameters += [Parameter.near:location!]
         let searchTask = session.venues.search(parameters) {
             (result) -> Void in
         if let response = result.response {
-              //println(response)
+              println(response)
             myJSON = JSON(response)
             self.savedResponse = response
             self.performSegueWithIdentifier("ShowPlaces", sender: self)
@@ -69,4 +129,3 @@ class Repository {
         self.html_url = json["html_url"] as? String
     }
 }
-
