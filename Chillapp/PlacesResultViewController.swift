@@ -11,10 +11,8 @@ import QuadratTouch
 import SwiftyJSON
 
 
-class PlacesResultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlacesResultViewController: UIViewController{
     
-    
- 
     var repositories = [Repository]()
     var results = [String: AnyObject]() {
         didSet {
@@ -22,9 +20,19 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     var json: JSON?
+    var selectedURL: String?
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "urlview") {
+            let placesResultViewController = segue.destinationViewController as! WebviewViewController
+            placesResultViewController.URLPath = selectedURL!
+        }
+        
+    }
     
-    
-    
+}
+
+extension PlacesResultViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myJSON["venues"].count
     }
@@ -33,13 +41,13 @@ class PlacesResultViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel!.text = myJSON["venues"][indexPath.row]["name"].string
         return cell
-        
-        
-        
-        
     }
-    
+}
+
+extension PlacesResultViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedURL = "http://foursquare.com/v/" + myJSON["venues"][indexPath.row]["id"].string!
+        performSegueWithIdentifier("urlview", sender: self)
         
     }
 }

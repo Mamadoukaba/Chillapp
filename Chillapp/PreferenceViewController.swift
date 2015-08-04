@@ -53,12 +53,11 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     
-    
     func displayLocationinfo(placemark: CLPlacemark) {
     
         self.locationManager.stopUpdatingLocation()
             println(placemark.locality)
-            //println(placemark.postalCode)
+            println(placemark.postalCode)
             println(placemark.administrativeArea)
             println(placemark.country)
             location = "\(placemark.locality) + \(placemark.postalCode) + \(placemark.administrativeArea) + \(placemark.country)"
@@ -77,7 +76,7 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var searchBar: UISearchBar!
    
     @IBAction func labelChanged(sender: UISlider) {
-        var sliderValue = lroundf(sender.value)
+        sliderValue = lroundf(sender.value)
         distanceLabel.text = "\(sliderValue) mile(s)"
     }
     
@@ -91,6 +90,7 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
         let session = Session.sharedSession()
         var parameters = [Parameter.query:searchBar.text!]
         parameters += [Parameter.near:location!]
+        parameters += [Parameter.radius:"\(sliderValue * 1609)"]
         let searchTask = session.venues.search(parameters) {
             (result) -> Void in
         if let response = result.response {
@@ -114,7 +114,6 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
         var destination = segue.destinationViewController as! PlacesResultViewController
             destination.results = savedResponse
     }
-
 }
 
 class Repository {
