@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import THContactPicker
+import AddressBook
+import AddressBookUI
 
 class WebviewViewController: UIViewController {
 
@@ -16,6 +19,7 @@ class WebviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAdressURL()
+        
         
     }
     
@@ -29,7 +33,18 @@ class WebviewViewController: UIViewController {
         urlPage.loadRequest(request)
     }
     
+    @IBAction func contactButton(sender: UIButton) {
+        var picker: ABPeoplePickerNavigationController = ABPeoplePickerNavigationController()
+        picker.peoplePickerDelegate = self
+        self.presentViewController(picker, animated: true, completion: nil)
+    }
     
     
 
+}
+
+extension WebviewViewController : ABPeoplePickerNavigationControllerDelegate {
+    func peoplePickerNavigationController(peoplePicker: ABPeoplePickerNavigationController!, didSelectPerson person: ABRecord!) {
+        
+    }
 }

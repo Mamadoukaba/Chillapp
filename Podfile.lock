@@ -1,10 +1,13 @@
 PODS:
   - SwiftyJSON (2.2.0)
+  - THContactPicker (1.1.1)
 
 DEPENDENCIES:
   - SwiftyJSON
+  - THContactPicker
 
 SPEC CHECKSUMS:
   SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+  THContactPicker: 69a146b4ab9ef39cd2520977acb344fe27a59f81
 
 COCOAPODS: 0.37.2

@@ -7,195 +7,286 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06BCBD2C79A2957112DC73FB /* Pods-Chillapp-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9788498B97E1AD9507087E15 /* Pods-Chillapp-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B936F4CEEE6D8ED41C6C291 /* Pods-Chillapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FFAA545A7E4C03E8CB2120 /* Pods-Chillapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4006FC52F46D6F7933C9026E /* Pods-Chillapp-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D0DA0E924E4CB88412D012 /* Pods-Chillapp-SwiftyJSON-dummy.m */; };
-		73863A832F3B49E76AB3FCFF /* Pods-Chillapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D21F5EF1864F6F2ABA9451A /* Pods-Chillapp-dummy.m */; };
-		8201C37DBC1E620214BEEAED /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B4C75E6CC0C07F51E303B /* SwiftyJSON.swift */; };
-		937DDF5269D651C3379FAD8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFB75E84CC273D73DDCD6F6 /* Foundation.framework */; };
-		DDA1E59E4ED6DA76C540F0FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFB75E84CC273D73DDCD6F6 /* Foundation.framework */; };
+		085D9C24198BB51DA8DAA3D0 /* Pods-Chillapp-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C9E63C2689F8268963B926 /* Pods-Chillapp-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C7904B295987BF6B28C40B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541A97C78B0421FE7B3B8A0E /* CoreGraphics.framework */; };
+		17AF51FD06C153E13029C2E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC26AAF23B639F07CE2E8ED /* Foundation.framework */; };
+		1940A72530F8B56F7C481C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC26AAF23B639F07CE2E8ED /* Foundation.framework */; };
+		28CAC83C6B302128BB34F7E4 /* Pods-Chillapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A5567041E309592343883 /* Pods-Chillapp-dummy.m */; };
+		4440F4FE10AFCCFB31419380 /* Pods-Chillapp-THContactPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1E886EE07BF07B750E14D /* Pods-Chillapp-THContactPicker-dummy.m */; };
+		5FFE777F5E8C2E0AF27F8F49 /* Pods-Chillapp-THContactPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE848C8DD31912630EFC742A /* Pods-Chillapp-THContactPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63923C3C4EC1FD205CBE6D47 /* THContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA1B231B717BA374E71C41 /* THContactView.m */; };
+		6FD15B8789BEDC1AEBD74BC3 /* Pods-Chillapp-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81793919B367F049D3C57754 /* Pods-Chillapp-SwiftyJSON-dummy.m */; };
+		709C5907D0FFD1B8BCDC450F /* THContactViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F8D2854FF41DF901E53A4E /* THContactViewStyle.m */; };
+		8AACBFE9FA25384E371083BD /* THContactPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48CDAD5E087F6121A1B39C /* THContactPickerView.m */; };
+		922E6E939D363FFFA6BCA92F /* THContactPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4263802451755B70BBB9AC8D /* THContactPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58FFE8983636FCAF73C8B5C /* THContactTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AD353414CF19EC3D224CC20A /* THContactTextField.m */; };
+		B81C7A72A27FD39B24CECBEB /* THContactViewStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 048026BAFDFA1853DA90D92F /* THContactViewStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8BDCCD8875960CA4DD2A15B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC26AAF23B639F07CE2E8ED /* Foundation.framework */; };
+		CC1D4DADF87D5D397D936B8B /* Pods-Chillapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7562FCD4AC4BB25E7E1F89F2 /* Pods-Chillapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D3E326A5F9678EF97F8980 /* THContactTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E571C8D9B086B3DB50864AEC /* THContactTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F94BFE232B8640D71C7C46CA /* THContactView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5F6B50D025C4FEAD4D292C /* THContactView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDADA5ACEC0184817D3FBC3D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC080B0CAA02862B02B1CF79 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1DB45C48B1C9E5B0B23BC967 /* PBXContainerItemProxy */ = {
+		E3CB8EC8AD6453D69E2AA31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ACC3BDA839483EEAC1136B2 /* Project object */;
+			containerPortal = 3A96E5478DFAD33CFFC9CF66 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E9525781F02C3A76F1A910D;
+			remoteGlobalIDString = EEFE9ACB3359842DCD4D03D0;
+			remoteInfo = "Pods-Chillapp-THContactPicker";
+		};
+		F88C684B4C7C69BCD83DB561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A96E5478DFAD33CFFC9CF66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1260655C84B78BB4515E05D;
 			remoteInfo = "Pods-Chillapp-SwiftyJSON";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BB90272AAE0061BD60A4F89 /* Pods-Chillapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chillapp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		108E77E48388387A0EC0390E /* Pods-Chillapp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-environment.h"; sourceTree = "<group>"; };
-		24B403E3CA2260BBB0510DE6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F56E9A6B60137E92C31254 /* Pods-Chillapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp.debug.xcconfig"; sourceTree = "<group>"; };
-		28B06D9A3CF93AC9B40556EF /* Pods-Chillapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chillapp-acknowledgements.plist"; sourceTree = "<group>"; };
-		2E3B4C75E6CC0C07F51E303B /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		3910AF2B0094D8C2482EEDF9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4056636A507CADA08D7D2B7A /* Pods-Chillapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chillapp.modulemap"; sourceTree = "<group>"; };
-		63D0DA0E924E4CB88412D012 /* Pods-Chillapp-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chillapp-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		7763478A077B7304AD6CE8BD /* Pods_Chillapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chillapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D21F5EF1864F6F2ABA9451A /* Pods-Chillapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chillapp-dummy.m"; sourceTree = "<group>"; };
-		7DFD4FEC119B5E35DC03485B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81FFAA545A7E4C03E8CB2120 /* Pods-Chillapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-umbrella.h"; sourceTree = "<group>"; };
-		8A8CB17639B155CD629617BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DFB75E84CC273D73DDCD6F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9788498B97E1AD9507087E15 /* Pods-Chillapp-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		9BCD9E0D1BBB720E68C9465F /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		9BD8E1D6760D70AF67344578 /* Pods-Chillapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chillapp-resources.sh"; sourceTree = "<group>"; };
-		A9F043E5EDE64BB10627876C /* Pods-Chillapp-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		B63767E0A242EB915F68386F /* Pods-Chillapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chillapp-frameworks.sh"; sourceTree = "<group>"; };
-		CC0D3FD1BD03C5D32B1B8A47 /* Pods-Chillapp-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		D564C107145EF4D0C62BE215 /* Pods-Chillapp-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chillapp-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		FA9F864746BC2F1D4DC0F3E7 /* Pods-Chillapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp.release.xcconfig"; sourceTree = "<group>"; };
+		041B6E8211744D5052D6ED52 /* THContactPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THContactPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		048026BAFDFA1853DA90D92F /* THContactViewStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THContactViewStyle.h; path = Classes/THContactViewStyle.h; sourceTree = "<group>"; };
+		0CD1E886EE07BF07B750E14D /* Pods-Chillapp-THContactPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chillapp-THContactPicker-dummy.m"; sourceTree = "<group>"; };
+		0CDA1B231B717BA374E71C41 /* THContactView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THContactView.m; path = Classes/THContactView.m; sourceTree = "<group>"; };
+		1F5F6B50D025C4FEAD4D292C /* THContactView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THContactView.h; path = Classes/THContactView.h; sourceTree = "<group>"; };
+		2847BCCAD93D30D0A0C4E217 /* Pods-Chillapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp.debug.xcconfig"; sourceTree = "<group>"; };
+		2ADCBCA25935F3DB4DF8E4DF /* Pods-Chillapp-THContactPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chillapp-THContactPicker.modulemap"; sourceTree = "<group>"; };
+		332F2D81BCCE628314E1177C /* Pods-Chillapp-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		4263802451755B70BBB9AC8D /* THContactPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THContactPickerView.h; path = Classes/THContactPickerView.h; sourceTree = "<group>"; };
+		4A2BA2C717D6A9690778A8B8 /* Pods-Chillapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chillapp-resources.sh"; sourceTree = "<group>"; };
+		541A97C78B0421FE7B3B8A0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5586180B1B406BC0E5A02276 /* Pods-Chillapp-THContactPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-THContactPicker-Private.xcconfig"; sourceTree = "<group>"; };
+		5FF1FB3E8C3120D11BEDE2BC /* Pods-Chillapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chillapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		601A5567041E309592343883 /* Pods-Chillapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chillapp-dummy.m"; sourceTree = "<group>"; };
+		69B006BE3B563F7667DDEFE6 /* Pods-Chillapp-THContactPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-THContactPicker-prefix.pch"; sourceTree = "<group>"; };
+		7562FCD4AC4BB25E7E1F89F2 /* Pods-Chillapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-umbrella.h"; sourceTree = "<group>"; };
+		7771579BE4DBD5B8EFBE07C7 /* Pods-Chillapp-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chillapp-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		7E21D532F8AF9A2C5EC2C46F /* Pods_Chillapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chillapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81793919B367F049D3C57754 /* Pods-Chillapp-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chillapp-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		8D899E15947594BCCC95F569 /* Pods-Chillapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chillapp-frameworks.sh"; sourceTree = "<group>"; };
+		8F0CD0A656EE8DC138A04F66 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		929A8360D2FA7EC5E2111AD5 /* Pods-Chillapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp.release.xcconfig"; sourceTree = "<group>"; };
+		9B1453D2FA778DAF88E3DF89 /* Pods-Chillapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chillapp.modulemap"; sourceTree = "<group>"; };
+		9C48CDAD5E087F6121A1B39C /* THContactPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THContactPickerView.m; path = Classes/THContactPickerView.m; sourceTree = "<group>"; };
+		9FC26AAF23B639F07CE2E8ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AD353414CF19EC3D224CC20A /* THContactTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THContactTextField.m; path = Classes/THContactTextField.m; sourceTree = "<group>"; };
+		B4C9E63C2689F8268963B926 /* Pods-Chillapp-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		B6F8D2854FF41DF901E53A4E /* THContactViewStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THContactViewStyle.m; path = Classes/THContactViewStyle.m; sourceTree = "<group>"; };
+		B807A9953951D4DB082EEC19 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC080B0CAA02862B02B1CF79 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CC93777DAEECBF27990946B3 /* Pods-Chillapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chillapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE848C8DD31912630EFC742A /* Pods-Chillapp-THContactPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-THContactPicker-umbrella.h"; sourceTree = "<group>"; };
+		CF7B9EBAA0BBCE484C9A024B /* Pods-Chillapp-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		E15EB68935CFF0D6BE8EBB06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E571C8D9B086B3DB50864AEC /* THContactTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THContactTextField.h; path = Classes/THContactTextField.h; sourceTree = "<group>"; };
+		E7B1F84DB9ECD5C3F8A7AEF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		E99A5398F52EF6BDE4E04903 /* Pods-Chillapp-THContactPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chillapp-THContactPicker.xcconfig"; sourceTree = "<group>"; };
+		F036BAA43BA69FFBF64EB438 /* Pods-Chillapp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chillapp-environment.h"; sourceTree = "<group>"; };
+		F516149658A185A72560D40B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D30E1739943316ADD92683D2 /* Frameworks */ = {
+		26264E1F7A7822B8D15E53BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA1E59E4ED6DA76C540F0FC /* Foundation.framework in Frameworks */,
+				17AF51FD06C153E13029C2E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EED90ACB1D090341C7EEC233 /* Frameworks */ = {
+		34DCD321F19F0D851DD3C90A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937DDF5269D651C3379FAD8A /* Foundation.framework in Frameworks */,
+				14C7904B295987BF6B28C40B /* CoreGraphics.framework in Frameworks */,
+				B8BDCCD8875960CA4DD2A15B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D588AAF1A3C45B754D46E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1940A72530F8B56F7C481C70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		565AB0F53F4A21B216A00010 /* Products */ = {
+		25B7B834AF92E0CF8601A484 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7763478A077B7304AD6CE8BD /* Pods_Chillapp.framework */,
-				24B403E3CA2260BBB0510DE6 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6A75BA5499885A6F140A8DCE = {
-			isa = PBXGroup;
-			children = (
-				3910AF2B0094D8C2482EEDF9 /* Podfile */,
-				B26340B6F883E6AF215DCD9A /* Frameworks */,
-				D8E48CA2E97FB6948B44C476 /* Pods */,
-				565AB0F53F4A21B216A00010 /* Products */,
-				91102B549C524743AE7574CF /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8703CA90227A3EC090D749FF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A8CB17639B155CD629617BF /* Info.plist */,
-				D564C107145EF4D0C62BE215 /* Pods-Chillapp-SwiftyJSON.modulemap */,
-				CC0D3FD1BD03C5D32B1B8A47 /* Pods-Chillapp-SwiftyJSON.xcconfig */,
-				9BCD9E0D1BBB720E68C9465F /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */,
-				63D0DA0E924E4CB88412D012 /* Pods-Chillapp-SwiftyJSON-dummy.m */,
-				A9F043E5EDE64BB10627876C /* Pods-Chillapp-SwiftyJSON-prefix.pch */,
-				9788498B97E1AD9507087E15 /* Pods-Chillapp-SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Chillapp-SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		8FFD407A8B7529266D591B5B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8DFB75E84CC273D73DDCD6F6 /* Foundation.framework */,
+				541A97C78B0421FE7B3B8A0E /* CoreGraphics.framework */,
+				9FC26AAF23B639F07CE2E8ED /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		91102B549C524743AE7574CF /* Targets Support Files */ = {
+		5841B4E846660661CE814C3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7BA03E7A1778093753EFB6E /* Pods-Chillapp */,
+				7E21D532F8AF9A2C5EC2C46F /* Pods_Chillapp.framework */,
+				8F0CD0A656EE8DC138A04F66 /* SwiftyJSON.framework */,
+				041B6E8211744D5052D6ED52 /* THContactPicker.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		A7BA03E7A1778093753EFB6E /* Pods-Chillapp */ = {
+		5A77E55143A0D6FC62CE8928 = {
 			isa = PBXGroup;
 			children = (
-				7DFD4FEC119B5E35DC03485B /* Info.plist */,
-				4056636A507CADA08D7D2B7A /* Pods-Chillapp.modulemap */,
-				0BB90272AAE0061BD60A4F89 /* Pods-Chillapp-acknowledgements.markdown */,
-				28B06D9A3CF93AC9B40556EF /* Pods-Chillapp-acknowledgements.plist */,
-				7D21F5EF1864F6F2ABA9451A /* Pods-Chillapp-dummy.m */,
-				108E77E48388387A0EC0390E /* Pods-Chillapp-environment.h */,
-				B63767E0A242EB915F68386F /* Pods-Chillapp-frameworks.sh */,
-				9BD8E1D6760D70AF67344578 /* Pods-Chillapp-resources.sh */,
-				81FFAA545A7E4C03E8CB2120 /* Pods-Chillapp-umbrella.h */,
-				27F56E9A6B60137E92C31254 /* Pods-Chillapp.debug.xcconfig */,
-				FA9F864746BC2F1D4DC0F3E7 /* Pods-Chillapp.release.xcconfig */,
+				B807A9953951D4DB082EEC19 /* Podfile */,
+				EE8B74FE63FE68CC7699648D /* Frameworks */,
+				F908C8E1101854A72F06951E /* Pods */,
+				5841B4E846660661CE814C3D /* Products */,
+				D2B9E047F0634E54A83875AC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		67830EAE0FAE842C687074A6 /* THContactPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4263802451755B70BBB9AC8D /* THContactPickerView.h */,
+				9C48CDAD5E087F6121A1B39C /* THContactPickerView.m */,
+				E571C8D9B086B3DB50864AEC /* THContactTextField.h */,
+				AD353414CF19EC3D224CC20A /* THContactTextField.m */,
+				1F5F6B50D025C4FEAD4D292C /* THContactView.h */,
+				0CDA1B231B717BA374E71C41 /* THContactView.m */,
+				048026BAFDFA1853DA90D92F /* THContactViewStyle.h */,
+				B6F8D2854FF41DF901E53A4E /* THContactViewStyle.m */,
+				C23256F16777500553800AA3 /* Support Files */,
+			);
+			path = THContactPicker;
+			sourceTree = "<group>";
+		};
+		8B187CC3220007D5B184882C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				CC080B0CAA02862B02B1CF79 /* SwiftyJSON.swift */,
+				BFA90186D8FEA53A7F61EA70 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		BDDA20D76011D310BF7BACA1 /* Pods-Chillapp */ = {
+			isa = PBXGroup;
+			children = (
+				F516149658A185A72560D40B /* Info.plist */,
+				9B1453D2FA778DAF88E3DF89 /* Pods-Chillapp.modulemap */,
+				5FF1FB3E8C3120D11BEDE2BC /* Pods-Chillapp-acknowledgements.markdown */,
+				CC93777DAEECBF27990946B3 /* Pods-Chillapp-acknowledgements.plist */,
+				601A5567041E309592343883 /* Pods-Chillapp-dummy.m */,
+				F036BAA43BA69FFBF64EB438 /* Pods-Chillapp-environment.h */,
+				8D899E15947594BCCC95F569 /* Pods-Chillapp-frameworks.sh */,
+				4A2BA2C717D6A9690778A8B8 /* Pods-Chillapp-resources.sh */,
+				7562FCD4AC4BB25E7E1F89F2 /* Pods-Chillapp-umbrella.h */,
+				2847BCCAD93D30D0A0C4E217 /* Pods-Chillapp.debug.xcconfig */,
+				929A8360D2FA7EC5E2111AD5 /* Pods-Chillapp.release.xcconfig */,
 			);
 			name = "Pods-Chillapp";
 			path = "Target Support Files/Pods-Chillapp";
 			sourceTree = "<group>";
 		};
-		B26340B6F883E6AF215DCD9A /* Frameworks */ = {
+		BFA90186D8FEA53A7F61EA70 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8FFD407A8B7529266D591B5B /* iOS */,
+				E7B1F84DB9ECD5C3F8A7AEF4 /* Info.plist */,
+				7771579BE4DBD5B8EFBE07C7 /* Pods-Chillapp-SwiftyJSON.modulemap */,
+				332F2D81BCCE628314E1177C /* Pods-Chillapp-SwiftyJSON.xcconfig */,
+				E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */,
+				81793919B367F049D3C57754 /* Pods-Chillapp-SwiftyJSON-dummy.m */,
+				CF7B9EBAA0BBCE484C9A024B /* Pods-Chillapp-SwiftyJSON-prefix.pch */,
+				B4C9E63C2689F8268963B926 /* Pods-Chillapp-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Chillapp-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		C23256F16777500553800AA3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E15EB68935CFF0D6BE8EBB06 /* Info.plist */,
+				2ADCBCA25935F3DB4DF8E4DF /* Pods-Chillapp-THContactPicker.modulemap */,
+				E99A5398F52EF6BDE4E04903 /* Pods-Chillapp-THContactPicker.xcconfig */,
+				5586180B1B406BC0E5A02276 /* Pods-Chillapp-THContactPicker-Private.xcconfig */,
+				0CD1E886EE07BF07B750E14D /* Pods-Chillapp-THContactPicker-dummy.m */,
+				69B006BE3B563F7667DDEFE6 /* Pods-Chillapp-THContactPicker-prefix.pch */,
+				CE848C8DD31912630EFC742A /* Pods-Chillapp-THContactPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Chillapp-THContactPicker";
+			sourceTree = "<group>";
+		};
+		D2B9E047F0634E54A83875AC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA20D76011D310BF7BACA1 /* Pods-Chillapp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EE8B74FE63FE68CC7699648D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B7B834AF92E0CF8601A484 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8E48CA2E97FB6948B44C476 /* Pods */ = {
+		F908C8E1101854A72F06951E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED69154CDFB66FD628D13A7F /* SwiftyJSON */,
+				8B187CC3220007D5B184882C /* SwiftyJSON */,
+				67830EAE0FAE842C687074A6 /* THContactPicker */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		ED69154CDFB66FD628D13A7F /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				2E3B4C75E6CC0C07F51E303B /* SwiftyJSON.swift */,
-				8703CA90227A3EC090D749FF /* Support Files */,
-			);
-			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		69959193B510F35B362D7EEA /* Headers */ = {
+		704F7829EDEB0ABDBEFD1873 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B936F4CEEE6D8ED41C6C291 /* Pods-Chillapp-umbrella.h in Headers */,
+				5FFE777F5E8C2E0AF27F8F49 /* Pods-Chillapp-THContactPicker-umbrella.h in Headers */,
+				922E6E939D363FFFA6BCA92F /* THContactPickerView.h in Headers */,
+				D0D3E326A5F9678EF97F8980 /* THContactTextField.h in Headers */,
+				F94BFE232B8640D71C7C46CA /* THContactView.h in Headers */,
+				B81C7A72A27FD39B24CECBEB /* THContactViewStyle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B4FF47D9F487B255A97B294 /* Headers */ = {
+		782A06F2E70CABE1873501CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06BCBD2C79A2957112DC73FB /* Pods-Chillapp-SwiftyJSON-umbrella.h in Headers */,
+				CC1D4DADF87D5D397D936B8B /* Pods-Chillapp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50106578EE3264AD235E38C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085D9C24198BB51DA8DAA3D0 /* Pods-Chillapp-SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5E9525781F02C3A76F1A910D /* Pods-Chillapp-SwiftyJSON */ = {
+		D1260655C84B78BB4515E05D /* Pods-Chillapp-SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 975666C9C5C2127FEAE0AAD7 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-SwiftyJSON" */;
+			buildConfigurationList = F9ED28A08D6B6B027B750186 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-SwiftyJSON" */;
 			buildPhases = (
-				617A236C4E86ABDEA7CFD122 /* Sources */,
-				EED90ACB1D090341C7EEC233 /* Frameworks */,
-				7B4FF47D9F487B255A97B294 /* Headers */,
+				894D41DC54ACBFD0FB5251E0 /* Sources */,
+				B3D588AAF1A3C45B754D46E3 /* Frameworks */,
+				C50106578EE3264AD235E38C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -203,114 +294,121 @@
 			);
 			name = "Pods-Chillapp-SwiftyJSON";
 			productName = "Pods-Chillapp-SwiftyJSON";
-			productReference = 24B403E3CA2260BBB0510DE6 /* SwiftyJSON.framework */;
+			productReference = 8F0CD0A656EE8DC138A04F66 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A1A4DCF6BB065F4019A5CFF7 /* Pods-Chillapp */ = {
+		D4C3769F9E22538C6F1274FA /* Pods-Chillapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F06EA36B65E432D2FFDF04B /* Build configuration list for PBXNativeTarget "Pods-Chillapp" */;
+			buildConfigurationList = 3AD4CEC3AD4B2FA582AF9A2A /* Build configuration list for PBXNativeTarget "Pods-Chillapp" */;
 			buildPhases = (
-				891FB27A047418CBC7BCBD3E /* Sources */,
-				D30E1739943316ADD92683D2 /* Frameworks */,
-				69959193B510F35B362D7EEA /* Headers */,
+				60A57363523B55AE9C56DB5E /* Sources */,
+				26264E1F7A7822B8D15E53BF /* Frameworks */,
+				782A06F2E70CABE1873501CC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4353597938C8E56BC693DC0C /* PBXTargetDependency */,
+				FFC112EA8D9B3D3FD0036B9B /* PBXTargetDependency */,
+				C8F31F8A16C6D6C17E241164 /* PBXTargetDependency */,
 			);
 			name = "Pods-Chillapp";
 			productName = "Pods-Chillapp";
-			productReference = 7763478A077B7304AD6CE8BD /* Pods_Chillapp.framework */;
+			productReference = 7E21D532F8AF9A2C5EC2C46F /* Pods_Chillapp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEFE9ACB3359842DCD4D03D0 /* Pods-Chillapp-THContactPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 355D9290C153A414FF1C0744 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-THContactPicker" */;
+			buildPhases = (
+				C58D9C53F7798E776303E1C1 /* Sources */,
+				34DCD321F19F0D851DD3C90A /* Frameworks */,
+				704F7829EDEB0ABDBEFD1873 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Chillapp-THContactPicker";
+			productName = "Pods-Chillapp-THContactPicker";
+			productReference = 041B6E8211744D5052D6ED52 /* THContactPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0ACC3BDA839483EEAC1136B2 /* Project object */ = {
+		3A96E5478DFAD33CFFC9CF66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = D4F47DA5319E033CDD1076C2 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 403B5AAECC71D08592532FE9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6A75BA5499885A6F140A8DCE;
-			productRefGroup = 565AB0F53F4A21B216A00010 /* Products */;
+			mainGroup = 5A77E55143A0D6FC62CE8928;
+			productRefGroup = 5841B4E846660661CE814C3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1A4DCF6BB065F4019A5CFF7 /* Pods-Chillapp */,
-				5E9525781F02C3A76F1A910D /* Pods-Chillapp-SwiftyJSON */,
+				D4C3769F9E22538C6F1274FA /* Pods-Chillapp */,
+				D1260655C84B78BB4515E05D /* Pods-Chillapp-SwiftyJSON */,
+				EEFE9ACB3359842DCD4D03D0 /* Pods-Chillapp-THContactPicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		617A236C4E86ABDEA7CFD122 /* Sources */ = {
+		60A57363523B55AE9C56DB5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4006FC52F46D6F7933C9026E /* Pods-Chillapp-SwiftyJSON-dummy.m in Sources */,
-				8201C37DBC1E620214BEEAED /* SwiftyJSON.swift in Sources */,
+				28CAC83C6B302128BB34F7E4 /* Pods-Chillapp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		891FB27A047418CBC7BCBD3E /* Sources */ = {
+		894D41DC54ACBFD0FB5251E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73863A832F3B49E76AB3FCFF /* Pods-Chillapp-dummy.m in Sources */,
+				6FD15B8789BEDC1AEBD74BC3 /* Pods-Chillapp-SwiftyJSON-dummy.m in Sources */,
+				FDADA5ACEC0184817D3FBC3D /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58D9C53F7798E776303E1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4440F4FE10AFCCFB31419380 /* Pods-Chillapp-THContactPicker-dummy.m in Sources */,
+				8AACBFE9FA25384E371083BD /* THContactPickerView.m in Sources */,
+				A58FFE8983636FCAF73C8B5C /* THContactTextField.m in Sources */,
+				63923C3C4EC1FD205CBE6D47 /* THContactView.m in Sources */,
+				709C5907D0FFD1B8BCDC450F /* THContactViewStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4353597938C8E56BC693DC0C /* PBXTargetDependency */ = {
+		C8F31F8A16C6D6C17E241164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Chillapp-THContactPicker";
+			target = EEFE9ACB3359842DCD4D03D0 /* Pods-Chillapp-THContactPicker */;
+			targetProxy = E3CB8EC8AD6453D69E2AA31A /* PBXContainerItemProxy */;
+		};
+		FFC112EA8D9B3D3FD0036B9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Chillapp-SwiftyJSON";
-			target = 5E9525781F02C3A76F1A910D /* Pods-Chillapp-SwiftyJSON */;
-			targetProxy = 1DB45C48B1C9E5B0B23BC967 /* PBXContainerItemProxy */;
+			target = D1260655C84B78BB4515E05D /* Pods-Chillapp-SwiftyJSON */;
+			targetProxy = F88C684B4C7C69BCD83DB561 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03B8AE9C942A06F6EAE9E8F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27F56E9A6B60137E92C31254 /* Pods-Chillapp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp/Pods-Chillapp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Chillapp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E6B759F0EE8704E59F43BC8 /* Release */ = {
+		301B185C58E889C2A27FDA3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -344,9 +442,9 @@
 			};
 			name = Release;
 		};
-		824260EBD6FBD416125D9E64 /* Debug */ = {
+		3E8D3F2CDF7B82C50944A607 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BCD9E0D1BBB720E68C9465F /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = 5586180B1B406BC0E5A02276 /* Pods-Chillapp-THContactPicker-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -355,26 +453,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-THContactPicker/Pods-Chillapp-THContactPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-THContactPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-THContactPicker/Pods-Chillapp-THContactPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = THContactPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		83C229EED6174575A2CAFCB3 /* Release */ = {
+		891A2F87F67291A47D2CCC71 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA9F864746BC2F1D4DC0F3E7 /* Pods-Chillapp.release.xcconfig */;
+			baseConfigurationReference = 929A8360D2FA7EC5E2111AD5 /* Pods-Chillapp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -401,7 +498,89 @@
 			};
 			name = Release;
 		};
-		B83C8283D9C52C8D3613A163 /* Debug */ = {
+		8F2A26452B8CFE42B5D0A500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A817FDF659EB4F1D5E64ABC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5586180B1B406BC0E5A02276 /* Pods-Chillapp-THContactPicker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-THContactPicker/Pods-Chillapp-THContactPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-THContactPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-THContactPicker/Pods-Chillapp-THContactPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = THContactPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3CCEBE21437502E5F5EC731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5E78955B72F24CBF0905E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -440,9 +619,9 @@
 			};
 			name = Debug;
 		};
-		C9F4E911535F8656AE6EA4CB /* Release */ = {
+		FD768486D4B3C37718207CED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BCD9E0D1BBB720E68C9465F /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = 2847BCCAD93D30D0A0C4E217 /* Pods-Chillapp.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -451,53 +630,65 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Chillapp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp/Pods-Chillapp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Chillapp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F06EA36B65E432D2FFDF04B /* Build configuration list for PBXNativeTarget "Pods-Chillapp" */ = {
+		355D9290C153A414FF1C0744 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-THContactPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03B8AE9C942A06F6EAE9E8F1 /* Debug */,
-				83C229EED6174575A2CAFCB3 /* Release */,
+				3E8D3F2CDF7B82C50944A607 /* Debug */,
+				A817FDF659EB4F1D5E64ABC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		975666C9C5C2127FEAE0AAD7 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-SwiftyJSON" */ = {
+		3AD4CEC3AD4B2FA582AF9A2A /* Build configuration list for PBXNativeTarget "Pods-Chillapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				824260EBD6FBD416125D9E64 /* Debug */,
-				C9F4E911535F8656AE6EA4CB /* Release */,
+				FD768486D4B3C37718207CED /* Debug */,
+				891A2F87F67291A47D2CCC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F47DA5319E033CDD1076C2 /* Build configuration list for PBXProject "Pods" */ = {
+		403B5AAECC71D08592532FE9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B83C8283D9C52C8D3613A163 /* Debug */,
-				4E6B759F0EE8704E59F43BC8 /* Release */,
+				F5E78955B72F24CBF0905E27 /* Debug */,
+				301B185C58E889C2A27FDA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9ED28A08D6B6B027B750186 /* Build configuration list for PBXNativeTarget "Pods-Chillapp-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2A26452B8CFE42B5D0A500 /* Debug */,
+				E3CCEBE21437502E5F5EC731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0ACC3BDA839483EEAC1136B2 /* Project object */;
+	rootObject = 3A96E5478DFAD33CFFC9CF66 /* Project object */;
 }

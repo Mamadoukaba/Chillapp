@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_SwiftyJSON 2
 #define COCOAPODS_VERSION_PATCH_SwiftyJSON 0
 
+// THContactPicker
+#define COCOAPODS_POD_AVAILABLE_THContactPicker
+#define COCOAPODS_VERSION_MAJOR_THContactPicker 1
+#define COCOAPODS_VERSION_MINOR_THContactPicker 1
+#define COCOAPODS_VERSION_PATCH_THContactPicker 1
+

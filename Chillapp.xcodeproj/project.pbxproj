@@ -14,6 +14,7 @@
 		6565E2F61B6131320002D0B3 /* PlacesResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565E2F51B6131320002D0B3 /* PlacesResultViewController.swift */; };
 		6566063A1B56DEFC00C2A8D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656606391B56DEFC00C2A8D3 /* Images.xcassets */; };
 		65973C561B6FD4C9006AA6B1 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65973C551B6FD4C9006AA6B1 /* WebviewViewController.swift */; };
+		65973C611B73B25F006AA6B1 /* ContactPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65973C601B73B25F006AA6B1 /* ContactPickerViewController.swift */; };
 		65D3862B1B559D5800EFEE5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3862A1B559D5800EFEE5B /* AppDelegate.swift */; };
 		65D386301B559D5800EFEE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D3862E1B559D5800EFEE5B /* Main.storyboard */; };
 		65D386351B559D5800EFEE5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D386331B559D5800EFEE5B /* LaunchScreen.xib */; };
@@ -80,9 +81,9 @@
 		656471851B5D43590094C8AA /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		656471C31B5D82000094C8AA /* Quadrat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quadrat.xcodeproj; path = "das-quadrat/Source/Quadrat.xcodeproj"; sourceTree = "<group>"; };
 		6565E2F51B6131320002D0B3 /* PlacesResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesResultViewController.swift; sourceTree = "<group>"; };
-		656606381B569AF600C2A8D3 /* Chillapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chillapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		656606391B56DEFC00C2A8D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65973C551B6FD4C9006AA6B1 /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		65973C601B73B25F006AA6B1 /* ContactPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPickerViewController.swift; sourceTree = "<group>"; };
 		65D386251B559D5800EFEE5B /* Chillapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D386291B559D5800EFEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D3862A1B559D5800EFEE5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 				656471851B5D43590094C8AA /* PreferenceViewController.swift */,
 				654407931B681B9B00D49569 /* File.swift */,
 				65973C551B6FD4C9006AA6B1 /* WebviewViewController.swift */,
+				65973C601B73B25F006AA6B1 /* ContactPickerViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -147,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				656471C31B5D82000094C8AA /* Quadrat.xcodeproj */,
-				656606381B569AF600C2A8D3 /* Chillapp-Bridging-Header.h */,
 				65D386271B559D5800EFEE5B /* Chillapp */,
 				65D3863D1B559D5900EFEE5B /* ChillappTests */,
 				65D386261B559D5800EFEE5B /* Products */,
@@ -391,6 +392,7 @@
 				656471861B5D43590094C8AA /* PreferenceViewController.swift in Sources */,
 				65973C561B6FD4C9006AA6B1 /* WebviewViewController.swift in Sources */,
 				654407941B681B9B00D49569 /* File.swift in Sources */,
+				65973C611B73B25F006AA6B1 /* ContactPickerViewController.swift in Sources */,
 				6565E2F61B6131320002D0B3 /* PlacesResultViewController.swift in Sources */,
 				65D3862B1B559D5800EFEE5B /* AppDelegate.swift in Sources */,
 			);
@@ -484,7 +486,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Chillapp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,7 +525,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Chillapp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -534,11 +536,15 @@
 			baseConfigurationReference = 29355D1837647391E2286FAA /* Pods-Chillapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chillapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/FBSDKCoreKit/**";
 			};
 			name = Debug;
@@ -548,11 +554,14 @@
 			baseConfigurationReference = D52B03D69E7FE474777B0232 /* Pods-Chillapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chillapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/FBSDKCoreKit/**";
 			};
 			name = Release;
@@ -572,6 +581,7 @@
 				INFOPLIST_FILE = ChillappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp.app/Chillapp";
 			};
 			name = Debug;
@@ -587,6 +597,7 @@
 				INFOPLIST_FILE = ChillappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp.app/Chillapp";
 			};
 			name = Release;

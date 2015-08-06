@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'Chillapp' do
 	pod 'SwiftyJSON'
+    pod 'THContactPicker'
 end
 
 target 'ChillappTests' do

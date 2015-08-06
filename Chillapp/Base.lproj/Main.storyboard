@@ -174,25 +174,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkR-L2-Zsp">
-                                <rect key="frame" x="0.0" y="600" width="600" height="0.0"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrs-TK-8z1">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wt4-WA-0OH">
+                                <rect key="frame" x="223" y="562" width="154" height="30"/>
+                                <state key="normal" title="Send Place To Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactButton:" destination="bqH-TP-LRF" eventType="touchUpInside" id="SKA-i9-rO1"/>
+                                    <segue destination="mM7-QP-07f" kind="show" id="Oj2-ce-Z0Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="leading" secondItem="BkR-L2-Zsp" secondAttribute="leading" id="AQ5-Uy-74J"/>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="trailing" secondItem="BkR-L2-Zsp" secondAttribute="trailing" id="Amc-sd-0jT"/>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="leading" secondItem="7aM-g8-pPn" secondAttribute="leading" id="IgR-Me-HQl"/>
-                            <constraint firstItem="BkR-L2-Zsp" firstAttribute="top" secondItem="w2I-e3-Rbm" secondAttribute="top" id="Mru-TS-NcU"/>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="bottom" secondItem="w2I-e3-Rbm" secondAttribute="top" id="NWw-ZI-OIq"/>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="top" secondItem="9up-FC-PSU" secondAttribute="bottom" id="QS4-Bv-hxs"/>
-                            <constraint firstAttribute="trailing" secondItem="Qrs-TK-8z1" secondAttribute="trailing" id="VOv-Kc-Iag"/>
-                            <constraint firstItem="Qrs-TK-8z1" firstAttribute="bottom" secondItem="BkR-L2-Zsp" secondAttribute="bottom" id="xL9-Ic-37y"/>
+                            <constraint firstItem="w2I-e3-Rbm" firstAttribute="top" secondItem="wt4-WA-0OH" secondAttribute="bottom" constant="8" symbolic="YES" id="e1h-7X-Yz9"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="Qrs-TK-8z1" secondAttribute="centerXWithinMargins" id="hGW-6N-PEc"/>
+                            <constraint firstItem="wt4-WA-0OH" firstAttribute="centerX" secondItem="Qrs-TK-8z1" secondAttribute="centerX" id="ikE-SA-6R7"/>
+                            <constraint firstAttribute="width" secondItem="Qrs-TK-8z1" secondAttribute="width" id="otp-X1-XBK"/>
+                            <constraint firstAttribute="height" secondItem="Qrs-TK-8z1" secondAttribute="height" id="pwI-pv-BBW"/>
+                            <constraint firstAttribute="centerYWithinMargins" secondItem="Qrs-TK-8z1" secondAttribute="centerYWithinMargins" id="qbu-4p-dCX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -201,7 +205,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kif-gm-Fvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="468"/>
+            <point key="canvasLocation" x="4121" y="484"/>
+        </scene>
+        <!--Contact Picker View Controller-->
+        <scene sceneID="uWc-51-ckc">
+            <objects>
+                <viewController id="mM7-QP-07f" customClass="ContactPickerViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cMX-68-py5"/>
+                        <viewControllerLayoutGuide type="bottom" id="eY4-JH-lS0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AHO-hq-f8v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAk-YM-aRd" customClass="THContactPickerView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="bAk-YM-aRd" secondAttribute="bottom" id="mzO-zn-K63"/>
+                            <constraint firstItem="bAk-YM-aRd" firstAttribute="leading" secondItem="AHO-hq-f8v" secondAttribute="leading" id="o1U-p6-o5Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bAk-YM-aRd" secondAttribute="trailing" id="qd3-iq-ygt"/>
+                            <constraint firstItem="bAk-YM-aRd" firstAttribute="top" secondItem="AHO-hq-f8v" secondAttribute="topMargin" constant="64" id="xbg-G7-jfU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TD7-o2-LOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4800" y="484"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kee-uB-xdf">
