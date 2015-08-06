@@ -10,6 +10,8 @@ import UIKit
 import THContactPicker
 import AddressBook
 import AddressBookUI
+import MessageUI
+
 
 class WebviewViewController: UIViewController {
 
@@ -43,8 +45,23 @@ class WebviewViewController: UIViewController {
 
 }
 
-extension WebviewViewController : ABPeoplePickerNavigationControllerDelegate {
+extension WebviewViewController: ABPeoplePickerNavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
     func peoplePickerNavigationController(peoplePicker: ABPeoplePickerNavigationController!, didSelectPerson person: ABRecord!) {
+        if !MFMessageComposeViewController.canSendText() {
+            return
+        }
+        
+        var messageVC = MFMessageComposeViewController()
+        
+        messageVC.body = myJSON["venues"]["location"]["formattedAdress"].string;
+        messageVC.recipients = ["Enter tel-nr"]
+        messageVC.messageComposeDelegate = self;
+        
+        self.presentViewController(messageVC, animated: false, completion: nil)
+        
+        }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
         
     }
 }

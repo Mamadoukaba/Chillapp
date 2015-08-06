@@ -10,21 +10,42 @@ import UIKit
 import THContactPicker
 import AddressBook
 import AddressBookUI
+import MessageUI
 
-
-class ContactPickerViewController: UIViewController {
+class ContactPickerViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         contactPickerview()
     }
+    
     func contactPickerview() {
         let contactPickerView = THContactPickerView(frame: CGRectMake(0, 0, self.view.frame.size.width, 100))
         contactPickerView.setPlaceholderLabelText("Who would you like to message?")
         contactPickerView.delegate = self
         view.addSubview(contactPickerView)
-        
 }
+    
+    
+ 
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result:
+        MessageComposeResult) {
+        switch (result.value) {
+        case MessageComposeResultCancelled.value:
+            println("Message was cancelled")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultFailed.value:
+            println("Message failed")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultSent.value:
+            println("Message was sent")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        default:
+            break;
+        }
+    }
+    
     
 }
 
@@ -38,10 +59,12 @@ extension ContactPickerViewController : THContactPickerDelegate {
     }
     
     func contactPickerDidResize(contactPickerView: THContactPickerView!) {
-        
     }
     
     func contactPickerTextFieldShouldReturn(textField: UITextField!) -> Bool {
         return true
     }
 }
+    
+    
+    
