@@ -18,7 +18,7 @@ class WebviewViewController: UIViewController {
     @IBOutlet weak var urlPage: UIWebView!
     var URLPath = "http://google.com"
     
-    override func viewDidLoad() {   
+    override func viewDidLoad() { 
         super.viewDidLoad()
         loadAdressURL()
         
