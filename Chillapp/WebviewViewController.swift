@@ -21,12 +21,25 @@ class WebviewViewController: UIViewController {
     override func viewDidLoad() { 
         super.viewDidLoad()
         loadAdressURL()
-        
-        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func function(string: String) -> String {
+        return string + "ok"
     }
     
     func loadAdressURL() {
@@ -47,21 +60,32 @@ class WebviewViewController: UIViewController {
 
 extension WebviewViewController: ABPeoplePickerNavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
     func peoplePickerNavigationController(peoplePicker: ABPeoplePickerNavigationController!, didSelectPerson person: ABRecord!) {
-        if !MFMessageComposeViewController.canSendText() {
-            return
+        dismissViewControllerAnimated(true) { () -> Void in
+            
+            if !MFMessageComposeViewController.canSendText() {
+                return
+            }
+            
+            var messageVC = MFMessageComposeViewController()
+            let unmanagedPhones = ABRecordCopyValue(person, kABPersonPhoneProperty)
+            let phones: ABMultiValueRef =
+            Unmanaged.fromOpaque(unmanagedPhones.toOpaque()).takeUnretainedValue()
+                as NSObject as ABMultiValueRef
+            let unmanagedPhone = ABMultiValueCopyValueAtIndex(phones, 0)
+            let phone: String = Unmanaged.fromOpaque(unmanagedPhone.toOpaque()).takeUnretainedValue() as NSObject as! String
+            
+            messageVC.body = selectedVenue
+            messageVC.recipients = [phone]
+            messageVC.messageComposeDelegate = self;
+            
+            self.presentViewController(messageVC, animated: false, completion: nil)
         }
         
-        var messageVC = MFMessageComposeViewController()
-        
-        messageVC.body = myJSON["venues"]["location"]["formattedAdress"].string;
-        messageVC.recipients = ["Enter tel-nr"]
-        messageVC.messageComposeDelegate = self;
-        
-        self.presentViewController(messageVC, animated: false, completion: nil)
-        
-        }
+}
+    
     
     func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
-        
-    }
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    
 }

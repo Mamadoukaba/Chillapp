@@ -21,6 +21,10 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        self.searchBar.backgroundColor = UIColor.clearColor()
+        self.searchBar.setBackgroundImage(UIImage(), forBarPosition: UIBarPosition.Any, barMetrics: UIBarMetrics.Default)
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -29,6 +33,21 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
         
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         self.view.addGestureRecognizer(tap)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
     
     func dismissKeyboard() {
@@ -87,6 +106,7 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
     
     
     @IBAction func searchButton(sender: UIButton) {
+        sender.backgroundColor = UIColor.redColor()
         let session = Session.sharedSession()
         var parameters = [Parameter.query:searchBar.text!]
         parameters += [Parameter.near:location!]

@@ -340,6 +340,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					D1260655C84B78BB4515E05D = {
+						DevelopmentTeam = D3V2R8A236;
+					};
+				};
 			};
 			buildConfigurationList = 403B5AAECC71D08592532FE9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -502,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -517,6 +523,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SwiftyJSON;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -557,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E91850892D98393A0FD8E322 /* Pods-Chillapp-SwiftyJSON-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -572,6 +580,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-Chillapp-SwiftyJSON/Pods-Chillapp-SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftyJSON;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         let client = Client(clientID: "QOYLSJXAXYV5GEHMZAUSFUGGQX0QBWFSLRPN25PHGKBDT0LJ",
@@ -21,9 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             redirectURL:    "testapp123://foursquare")
         var configuration = Configuration(client:client)
         Session.setupSharedSessionWithConfiguration(configuration)
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         return true
-        
     }
+    
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         return true

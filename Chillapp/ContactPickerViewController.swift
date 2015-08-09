@@ -17,6 +17,13 @@ class ContactPickerViewController: UIViewController, MFMessageComposeViewControl
     override func viewDidLoad() {
         super.viewDidLoad()
         contactPickerview()
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
     
     func contactPickerview() {

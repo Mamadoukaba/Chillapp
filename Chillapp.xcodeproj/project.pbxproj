@@ -136,8 +136,8 @@
 		6565E2F91B6160090002D0B3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6565E2F51B6131320002D0B3 /* PlacesResultViewController.swift */,
 				656471851B5D43590094C8AA /* PreferenceViewController.swift */,
+				6565E2F51B6131320002D0B3 /* PlacesResultViewController.swift */,
 				654407931B681B9B00D49569 /* File.swift */,
 				65973C551B6FD4C9006AA6B1 /* WebviewViewController.swift */,
 				65973C601B73B25F006AA6B1 /* ContactPickerViewController.swift */,
@@ -267,6 +267,7 @@
 				TargetAttributes = {
 					65D386241B559D5800EFEE5B = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = D3V2R8A236;
 					};
 					65D386391B559D5900EFEE5B = {
 						CreatedOnToolsVersion = 6.3.2;

@@ -10,3 +10,4 @@ import Foundation
 import SwiftyJSON
 
 public var myJSON:JSON!
+public var selectedVenue: String!
