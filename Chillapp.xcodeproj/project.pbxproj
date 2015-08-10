@@ -84,7 +84,7 @@
 		656606391B56DEFC00C2A8D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65973C551B6FD4C9006AA6B1 /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		65973C601B73B25F006AA6B1 /* ContactPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPickerViewController.swift; sourceTree = "<group>"; };
-		65D386251B559D5800EFEE5B /* Chillapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D386251B559D5800EFEE5B /* Chillapp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chillapp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D386291B559D5800EFEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D3862A1B559D5800EFEE5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65D3862F1B559D5800EFEE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		65D386261B559D5800EFEE5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65D386251B559D5800EFEE5B /* Chillapp.app */,
+				65D386251B559D5800EFEE5B /* Chillapp!.app */,
 				65D3863A1B559D5900EFEE5B /* ChillappTests.xctest */,
 			);
 			name = Products;
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65D386241B559D5800EFEE5B /* Chillapp */ = {
+		65D386241B559D5800EFEE5B /* Chillapp! */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65D386441B559D5900EFEE5B /* Build configuration list for PBXNativeTarget "Chillapp" */;
+			buildConfigurationList = 65D386441B559D5900EFEE5B /* Build configuration list for PBXNativeTarget "Chillapp!" */;
 			buildPhases = (
 				E316B49242F88FF1DCB93C4F /* Check Pods Manifest.lock */,
 				65D386211B559D5800EFEE5B /* Sources */,
@@ -233,9 +233,9 @@
 				656471DC1B5D83370094C8AA /* PBXTargetDependency */,
 				656471E51B5D83B70094C8AA /* PBXTargetDependency */,
 			);
-			name = Chillapp;
+			name = "Chillapp!";
 			productName = Chillapp;
-			productReference = 65D386251B559D5800EFEE5B /* Chillapp.app */;
+			productReference = 65D386251B559D5800EFEE5B /* Chillapp!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		65D386391B559D5900EFEE5B /* ChillappTests */ = {
@@ -294,7 +294,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				65D386241B559D5800EFEE5B /* Chillapp */,
+				65D386241B559D5800EFEE5B /* Chillapp! */,
 				65D386391B559D5900EFEE5B /* ChillappTests */,
 			);
 		};
@@ -422,7 +422,7 @@
 		};
 		65D3863C1B559D5900EFEE5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65D386241B559D5800EFEE5B /* Chillapp */;
+			target = 65D386241B559D5800EFEE5B /* Chillapp! */;
 			targetProxy = 65D3863B1B559D5900EFEE5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -537,15 +537,19 @@
 			baseConfigurationReference = 29355D1837647391E2286FAA /* Pods-Chillapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Chillapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/FBSDKCoreKit/**";
 			};
 			name = Debug;
@@ -555,14 +559,18 @@
 			baseConfigurationReference = D52B03D69E7FE474777B0232 /* Pods-Chillapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Chillapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/FBSDKCoreKit/**";
 			};
 			name = Release;
@@ -583,7 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp.app/Chillapp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp!.app/Chillapp!";
 			};
 			name = Debug;
 		};
@@ -599,7 +607,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp.app/Chillapp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chillapp!.app/Chillapp!";
 			};
 			name = Release;
 		};
@@ -615,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65D386441B559D5900EFEE5B /* Build configuration list for PBXNativeTarget "Chillapp" */ = {
+		65D386441B559D5900EFEE5B /* Build configuration list for PBXNativeTarget "Chillapp!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65D386451B559D5900EFEE5B /* Debug */,

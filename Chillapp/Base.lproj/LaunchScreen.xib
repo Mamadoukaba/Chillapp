@@ -11,32 +11,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Mamadou Kaba. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="440" width="441" height="21"/>
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C" translatesAutoresizingMaskIntoConstraints="NO" id="CZD-lu-QJd">
+                    <rect key="frame" x="196" y="188" width="89" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="89" id="QBL-mU-GVc"/>
+                        <constraint firstAttribute="height" constant="104" id="SM8-w1-tb9"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-Jr-ZAY">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CZD-lu-QJd">
-                    <rect key="frame" x="68" y="203" width="355" height="73"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="73" id="omL-rr-7YN"/>
-                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="oOb-Jr-ZAY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="88d-uF-KAy"/>
+                <constraint firstItem="CZD-lu-QJd" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="8h7-NV-aIg"/>
                 <constraint firstAttribute="trailing" secondItem="oOb-Jr-ZAY" secondAttribute="trailing" id="EPq-Ti-HUT"/>
                 <constraint firstAttribute="bottom" secondItem="oOb-Jr-ZAY" secondAttribute="bottom" id="J0v-My-9Kb"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstItem="oOb-Jr-ZAY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TpN-pA-TZ6"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="CZD-lu-QJd" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" constant="5" id="a5t-qC-DWr"/>
-                <constraint firstItem="CZD-lu-QJd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="203" id="zId-9B-dd1"/>
+                <constraint firstItem="CZD-lu-QJd" firstAttribute="centerY" secondItem="oOb-Jr-ZAY" secondAttribute="centerY" id="yZk-2Q-pjQ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -45,6 +46,6 @@
     </objects>
     <resources>
         <image name="Background" width="375" height="667"/>
-        <image name="Logo" width="355" height="79"/>
+        <image name="C" width="143" height="170"/>
     </resources>
 </document>

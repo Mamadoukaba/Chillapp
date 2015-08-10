@@ -8,7 +8,7 @@
         <!--Preference View Controller-->
         <scene sceneID="FNI-ro-vDE">
             <objects>
-                <viewController id="hmg-Zc-4Bo" customClass="PreferenceViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hmg-Zc-4Bo" customClass="PreferenceViewController" customModule="Chillapp_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OcY-xd-De4"/>
                         <viewControllerLayoutGuide type="bottom" id="iis-1i-0Tv"/>
@@ -84,10 +84,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-x2-kW3">
-                                <rect key="frame" x="248" y="108" width="121" height="97"/>
+                                <rect key="frame" x="194" y="108" width="213" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="F0G-2v-z64"/>
-                                    <constraint firstAttribute="width" constant="121" id="qQn-1m-iYS"/>
+                                    <constraint firstAttribute="height" constant="60" id="F0G-2v-z64"/>
+                                    <constraint firstAttribute="width" constant="213" id="qQn-1m-iYS"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -104,7 +104,7 @@
                             <constraint firstItem="ciq-OO-tET" firstAttribute="centerX" secondItem="4XW-j0-QiH" secondAttribute="centerX" id="EAW-wi-rrD"/>
                             <constraint firstItem="zCp-aB-DfF" firstAttribute="leading" secondItem="ejz-E3-KGy" secondAttribute="leadingMargin" constant="67" id="EBo-B0-vsy"/>
                             <constraint firstItem="Lv4-lm-ZUj" firstAttribute="centerX" secondItem="4XW-j0-QiH" secondAttribute="centerX" constant="8" id="Hod-TN-yG5"/>
-                            <constraint firstItem="5GV-x2-kW3" firstAttribute="centerX" secondItem="qsN-ju-03O" secondAttribute="centerX" constant="8.5" id="Hs1-a4-4fj"/>
+                            <constraint firstItem="5GV-x2-kW3" firstAttribute="centerX" secondItem="qsN-ju-03O" secondAttribute="centerX" constant="0.5" id="Hs1-a4-4fj"/>
                             <constraint firstItem="KOC-Ja-LYq" firstAttribute="top" secondItem="Lv4-lm-ZUj" secondAttribute="bottom" constant="8" id="ILh-2X-9mg"/>
                             <constraint firstAttribute="trailing" secondItem="qsN-ju-03O" secondAttribute="trailing" id="JxU-hJ-K21"/>
                             <constraint firstItem="qsN-ju-03O" firstAttribute="top" secondItem="OcY-xd-De4" secondAttribute="bottom" constant="-18" id="Lgw-PY-Jm0"/>
@@ -131,7 +131,7 @@
         <!--Places Result View Controller-->
         <scene sceneID="gOw-9z-VPm">
             <objects>
-                <viewController id="Tky-y8-eFG" customClass="PlacesResultViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tky-y8-eFG" customClass="PlacesResultViewController" customModule="Chillapp_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="agN-Pd-wh1"/>
                         <viewControllerLayoutGuide type="bottom" id="Myx-Ir-hGx"/>
@@ -189,7 +189,7 @@
         <!--Webview View Controller-->
         <scene sceneID="3Xb-As-tdW">
             <objects>
-                <viewController id="bqH-TP-LRF" customClass="WebviewViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bqH-TP-LRF" customClass="WebviewViewController" customModule="Chillapp_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9up-FC-PSU"/>
                         <viewControllerLayoutGuide type="bottom" id="w2I-e3-Rbm"/>
@@ -217,7 +217,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Send Place To Friends">
+                                <state key="normal" title="Send Adress To Friends">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -247,7 +247,7 @@
         <!--Contact Picker View Controller-->
         <scene sceneID="uWc-51-ckc">
             <objects>
-                <viewController id="mM7-QP-07f" customClass="ContactPickerViewController" customModule="Chillapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mM7-QP-07f" customClass="ContactPickerViewController" customModule="Chillapp_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cMX-68-py5"/>
                         <viewControllerLayoutGuide type="bottom" id="eY4-JH-lS0"/>
@@ -294,6 +294,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="147" height="176"/>
+        <image name="Logo" width="253" height="64"/>
     </resources>
 </document>
