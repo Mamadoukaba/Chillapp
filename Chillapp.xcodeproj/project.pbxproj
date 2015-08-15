@@ -19,6 +19,7 @@
 		65D386301B559D5800EFEE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D3862E1B559D5800EFEE5B /* Main.storyboard */; };
 		65D386351B559D5800EFEE5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D386331B559D5800EFEE5B /* LaunchScreen.xib */; };
 		65D386411B559D5900EFEE5B /* ChillappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D386401B559D5900EFEE5B /* ChillappTests.swift */; };
+		65EF892A1B7BD8B50033BDEE /* BackgroundChillapp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65EF89281B7BD75F0033BDEE /* BackgroundChillapp.mp4 */; };
 		CC5FF814ACECE08C675718D8 /* Pods_Chillapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B87FFC072F9C09792EB944 /* Pods_Chillapp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,8 @@
 		65D3863A1B559D5900EFEE5B /* ChillappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D3863F1B559D5900EFEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D386401B559D5900EFEE5B /* ChillappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillappTests.swift; sourceTree = "<group>"; };
+		65EF89271B7BD7020033BDEE /* BackgroundChillapp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BackgroundChillapp.mp4; sourceTree = "<group>"; };
+		65EF89281B7BD75F0033BDEE /* BackgroundChillapp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BackgroundChillapp.mp4; sourceTree = SOURCE_ROOT; };
 		D52B03D69E7FE474777B0232 /* Pods-Chillapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chillapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chillapp/Pods-Chillapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				65D3862A1B559D5800EFEE5B /* AppDelegate.swift */,
+				65EF89291B7BD88B0033BDEE /* Resources */,
 				6565E2F91B6160090002D0B3 /* View Controllers */,
 				65D3862E1B559D5800EFEE5B /* Main.storyboard */,
 				656606391B56DEFC00C2A8D3 /* Images.xcassets */,
@@ -202,6 +206,15 @@
 				65D3863F1B559D5900EFEE5B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65EF89291B7BD88B0033BDEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65EF89281B7BD75F0033BDEE /* BackgroundChillapp.mp4 */,
+				65EF89271B7BD7020033BDEE /* BackgroundChillapp.mp4 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		8EBD369E40A4088CA5A164EC /* Frameworks */ = {
@@ -322,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EF892A1B7BD8B50033BDEE /* BackgroundChillapp.mp4 in Resources */,
 				6566063A1B56DEFC00C2A8D3 /* Images.xcassets in Resources */,
 				65D386301B559D5800EFEE5B /* Main.storyboard in Resources */,
 				65D386351B559D5800EFEE5B /* LaunchScreen.xib in Resources */,

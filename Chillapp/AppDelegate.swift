@@ -10,7 +10,7 @@ import UIKit
 import QuadratTouch
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISearchBarDelegate {
 
     var window: UIWindow?
     

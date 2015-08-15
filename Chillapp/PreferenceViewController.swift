@@ -10,37 +10,73 @@ import UIKit
 import QuadratTouch
 import SwiftyJSON
 import CoreLocation
+import MediaPlayer
 
 
-class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
+class PreferenceViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate {
     
     //LOCATION CODE
     
     let locationManager = CLLocationManager()
     var location: String?
+    var moviePlayer : MPMoviePlayerController?
     
+    func playVideo() {
+        let path = NSBundle.mainBundle().pathForResource("BackgroundChillapp", ofType:"mp4")
+        let url = NSURL.fileURLWithPath(path!)
+        if moviePlayer != nil {
+            moviePlayer!.view.removeFromSuperview()
+        }
+        moviePlayer = MPMoviePlayerController(contentURL: url)
+        moviePlayer!.fullscreen = true
+        moviePlayer!.controlStyle = .Embedded
+        if let player = moviePlayer {
+//            player.view.frame = self.view.bounds
+            player.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y-50, view.frame.width, view.frame.height+50)
+            player.prepareToPlay()
+            
+            player.scalingMode = .AspectFill
+            self.view.insertSubview(player.view, atIndex: 0)
+            moviePlayer?.repeatMode = .One
+            
+        }
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        
+        //do something
+//       
+        searchButton(UIButton())
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.tintColor = UIColor.clearColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         self.searchBar.backgroundColor = UIColor.clearColor()
+        self.searchBar.delegate = self
         self.searchBar.setBackgroundImage(UIImage(), forBarPosition: UIBarPosition.Any, barMetrics: UIBarMetrics.Default)
+        var textFieldInsideSearchBar = searchBar.valueForKey("searchField") as? UITextField
+        textFieldInsideSearchBar?.textColor = UIColor.blackColor()
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        self.view.addGestureRecognizer(tap)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "appEnteredForeground", name: UIApplicationDidBecomeActiveNotification, object: nil)
+//        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+//        view.addGestureRecognizer(tap)
     }
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        
-        
+        super.viewDidAppear(animated)
+        playVideo()
+
     }
-    
+
     override func viewWillAppear(animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -48,10 +84,20 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate{
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    func dismissKeyboard() {
-        self.searchBar.resignFirstResponder()
+    func appEnteredForeground() {
+        playVideo()
+    }
+    
+//    func DismissKeyboard() {
+////        self.searchBar.resignFirstResponder()
+//        view.endEditing(true)
+//    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {

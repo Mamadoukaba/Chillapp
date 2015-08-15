@@ -16,6 +16,7 @@ class PlacesResultViewController: UIViewController {
     override func viewDidLoad() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+        
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -23,6 +24,8 @@ class PlacesResultViewController: UIViewController {
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
     
+    
+
     
     var repositories = [Repository]()
     var results = [String: AnyObject]() {
@@ -170,6 +173,11 @@ extension PlacesResultViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        tableView.backgroundColor = UIColor(red: 0.204, green: 0.286, blue: 0.369, alpha: 1)
+
+    }
 }
 
 extension PlacesResultViewController: UITableViewDelegate {
