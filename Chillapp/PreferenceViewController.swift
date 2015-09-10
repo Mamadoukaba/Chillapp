@@ -8,7 +8,6 @@
 
 import UIKit
 import QuadratTouch
-import SwiftyJSON
 import CoreLocation
 import MediaPlayer
 
@@ -31,10 +30,8 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate, UIS
         moviePlayer!.fullscreen = true
         moviePlayer!.controlStyle = .Embedded
         if let player = moviePlayer {
-//            player.view.frame = self.view.bounds
             player.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y-50, view.frame.width, view.frame.height+50)
             player.prepareToPlay()
-            
             player.scalingMode = .AspectFill
             self.view.insertSubview(player.view, atIndex: 0)
             moviePlayer?.repeatMode = .One
@@ -52,7 +49,7 @@ class PreferenceViewController: UIViewController, CLLocationManagerDelegate, UIS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchBar.tintColor = UIColor.clearColor()
+        searchBar.tintColor = UIColor.blackColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         self.searchBar.backgroundColor = UIColor.clearColor()

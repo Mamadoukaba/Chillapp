@@ -2,12 +2,11 @@
 # platform :ios, '8.0'
 use_frameworks!
 
-target 'Chillapp' do
-	pod 'SwiftyJSON'
-    pod 'THContactPicker'
+pod 'SwiftyJSON'
+pod 'THContactPicker'
+pod 'Mixpanel
+
+target “Chillapp” do
+    pod "Mixpanel"
+    pod "SwiftyJSON"
 end
-
-target 'ChillappTests' do
-
-end
-

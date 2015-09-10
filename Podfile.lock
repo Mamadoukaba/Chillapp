@@ -1,13 +1,18 @@
 PODS:
+  - Mixpanel (2.8.2):
+    - Mixpanel/Mixpanel (= 2.8.2)
+  - Mixpanel/Mixpanel (2.8.2)
   - SwiftyJSON (2.2.0)
   - THContactPicker (1.1.1)
 
 DEPENDENCIES:
+  - Mixpanel
   - SwiftyJSON
   - THContactPicker
 
 SPEC CHECKSUMS:
+  Mixpanel: f4d71ac2a306e7cda6ad03d4a2be249a0fd7a967
   SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
   THContactPicker: 69a146b4ab9ef39cd2520977acb344fe27a59f81
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2
